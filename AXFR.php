@@ -3,7 +3,7 @@
 exec("/usr/bin/dig -k $TSIG_PATH AXFR $ZONE @$NS +noclass +nocomments +nocmd +nostats", $cmdout, $exitcode);
 
 if ($exitcode !== 0) {
-    die("AXFR query failed with exit code $exitcode");
+    die("AXFR query failed with exit code $exitcode Do you forget to edit the CONFIG.php?");
 }
 
 

@@ -76,9 +76,9 @@
 			</form>
 			<form method="POST" action="index.php" id="SRV" class="add_form">
 				<label>Service:</label>
-				<input name="RR_SERVICE" type="text" placeholder="_minecraft" required>
+				<input name="RR_SERVICE" type="text" placeholder="minecraft" required>
 				<label>Protocol:</label>
-				<input name="RR_PROTOCOL" type="text" placeholder="_tcp" required>
+				<input name="RR_PROTOCOL" type="text" placeholder="tcp" required>
 				<label>NAME:</label>
 				<input name="RR_NAME" type="text" placeholder="example.com" required>
 				<label>TTL:</label>
@@ -93,6 +93,34 @@
 				<label>Target:</label>
 				<input name="RR_TARGET" type="text" placeholder="example.com" required>
 				<input type="hidden" name="RR_TYPE" value="SRV">
+				<BR><BR>
+				<input type="hidden" name="RR_MODE" value="ADD">
+				<input type="submit" value="Submit">
+			</form>
+			<form method="POST" action="index.php" id="SSHFP" class="add_form">
+				<label>NAME:</label>
+				<input name="RR_NAME" type="text" placeholder="example.com" required>
+				<label>TTL:</label>
+				<input name="RR_TTL" type="number" value="300" required>
+				<label>IN SSHFP </label><BR>
+				<label>Algorithm:</label>
+				<select id="rr-select" name="RR_ALGORITHM">
+					<option value="0">0. Reserved</option>
+					<option value="1">1. RSA</option>
+					<option value="2">2. DSA</option>
+					<option value="3">3. ECDSA</option>
+					<option value="4">4. Ed25519</option>
+					<option value="5">5. Unassigned</option>
+					<option value="6">6. Ed448</option>
+				</select>
+				<label>Hash:</label>
+				<select id="rr-select" name="RR_HASH">
+					<option value="0">0. Reserved</option>
+					<option value="1">1. SHA-1</option>
+					<option value="2">2. SHA-256</option>
+				</select>
+				<textarea name="RR_VALUE" rows="1" cols="70" required placeholder="AD7D16704F4203AD7F58589EDFADABA0EC80DCFB"></textarea>
+				<input type="hidden" name="RR_TYPE" value="SSHFP">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
 				<input type="submit" value="Submit">

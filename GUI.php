@@ -164,7 +164,7 @@
 			<label for="RR_HASH">HASH:</label>
 			<input required type="text" id="RR_HASH" name="RR_HASH" value="<?php echo htmlspecialchars($record['RR_HASH']); ?>">
 			<label for="RR_FINGERPRINT">Target:</label>
-			<input required type="text" id="RR_FINGERPRINT" name="RR_FINGERPRINT" value="<?php echo htmlspecialchars($record['RR_FINGERPRINT']); ?>">
+			<textarea id="RR_FINGERPRINT" name="RR_FINGERPRINT" rows="1" cols="70" required placeholder="AD7D16704F4203AD7F58589EDFADABA0EC80DCFB"><?php echo htmlspecialchars($record['RR_FINGERPRINT']); ?></textarea>
 
 			<!-- สำหรับ UPDATE -->
 			<input type="hidden" id="RR_NAME_OLD" name="RR_NAME_OLD" value="<?php echo htmlspecialchars($record['RR_NAME']); ?>">
@@ -227,8 +227,8 @@
 			<input required type="text" id="RR_FLAGS" name="RR_FLAGS" value="<?php echo htmlspecialchars($record['RR_FLAGS']); ?>">
 			<label for="RR_TAG">Tag:</label>
 			<input required type="text" id="RR_TAG" name="RR_TAG" value="<?php echo htmlspecialchars($record['RR_TAG']); ?>">
-			<label for="RR_VALUE">Value:</label>
-			<input required type="text" id="RR_VALUE" name="RR_VALUE" value="<?php echo htmlspecialchars($record['RR_VALUE']); ?>">
+			<label for="RR_VALUE">Value:</label><BR>
+			<textarea id="RR_VALUE" name="RR_VALUE" rows="1" cols="70" required placeholder="ca.example.com"><?php echo htmlspecialchars($record['RR_VALUE']); ?></textarea>
 
 			<!-- สำหรับ UPDATE -->
 			<input type="hidden" id="RR_NAME_OLD" name="RR_NAME_OLD" value="<?php echo htmlspecialchars($record['RR_NAME']); ?>">
