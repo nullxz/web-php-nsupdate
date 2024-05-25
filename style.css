@@ -1,0 +1,107 @@
+@font-face {
+    font-family: NOTO-MEDIUM;
+    src: url(./font/NotoSansThai_SemiCondensed-Medium.ttf);
+    font-display: swap;
+}
+* {
+    font-family: NOTO-MEDIUM;
+}
+
+html {
+	background-color: #212121;
+	color: #FFF;
+}
+#panel {
+	position: relative;
+	background-color: #212121;
+	width: 70%;
+	padding: 16px;
+	margin: auto;
+	border-radius: 4px;
+}
+.hidden {
+	display: none;
+}
+#command_output, textarea {
+	background-color: #2b2b2b;
+	color: #FFF;
+	border: 2px solid #ccc;
+	border-radius: 2px;
+	width:100%;
+}
+input[type=text] {
+	width: auto;
+	padding: 8px 8px;
+	margin: 8px 0;
+	border: 2px solid #ccc;
+	border-radius: 2px;
+	background-color: #2b2b2b;
+	color: #FFF;
+}
+input[type=number] {
+	width: auto;
+	padding: 8px 8px;
+	margin: 8px 0;
+	border: 2px solid #ccc;
+	border-radius: 2px;
+	background-color: #2b2b2b;
+	color: #FFF;
+}
+
+
+
+input[type=submit] {
+  position: relative;
+  background-color: #ffb300;
+  width: 10%;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  color: #212121;
+  padding: 8px;
+  text-align: center;
+
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+th {
+	text-align: left;
+	padding: 4px;
+	word-wrap: break-word;
+}
+td {
+	text-align: left;
+	padding: 4px;
+	word-wrap: break-word;
+}
+.edit_button {
+  position: relative;
+  background-color: #62affc;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  color: #212121;
+  padding: 8px;
+  text-align: center;
+}
+.addnew_button {
+  position: relative;
+  background-color: #6dfc62;
+  width: 10%;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  color: #212121;
+  padding: 8px;
+  text-align: center;
+}
+.EDITGUI {
+	display: none;
+}
+.add_form {
+	display: none;
+}
