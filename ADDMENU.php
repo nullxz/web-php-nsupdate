@@ -145,9 +145,9 @@
 			</form>
 			<form method="POST" action="index.php" id="TLSA" class="add_form">
 				<label>Port:</label>
-				<input name="RR_PORT" type="text" placeholder="_443" required>
+				<input name="RR_PORT" type="text" placeholder="443" required>
 				<label>Protocol:</label>
-				<input name="RR_PROTOCOL" type="text" placeholder="_tcp" required>
+				<input name="RR_PROTOCOL" type="text" placeholder="tcp" required>
 				<label>NAME:</label>
 				<input name="RR_NAME" type="text" placeholder="example.com" required>
 				<label>TTL:</label>

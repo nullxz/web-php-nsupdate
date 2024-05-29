@@ -210,7 +210,7 @@
 			<input type="hidden" id="RR_TYPE_OLD" name="RR_TYPE_OLD" value="<?php echo htmlspecialchars($record['RR_TYPE']); ?>">
 			<input type="hidden" id="RR_TTL_OLD" name="RR_TTL_OLD" value="<?php echo htmlspecialchars($record['RR_TTL']); ?>">
 			<input type="hidden" id="RR_USAGE_OLD" name="RR_USAGE_OLD" value="<?php echo htmlspecialchars($record['RR_USAGE']); ?>">
-			<input type="hidden" id="RR_SELECTOR_OLD" name="RRR_SELECTOR_OLD" value="<?php echo htmlspecialchars($record['RR_SELECTOR']); ?>">
+			<input type="hidden" id="RR_SELECTOR_OLD" name="RR_SELECTOR_OLD" value="<?php echo htmlspecialchars($record['RR_SELECTOR']); ?>">
 			<input type="hidden" id="RR_MATCHING_OLD" name="RR_MATCHING_OLD" value="<?php echo htmlspecialchars($record['RR_MATCHING']); ?>">
 			<input type="hidden" id="RR_CERTINFO_OLD" name="RR_CERTINFO_OLD" value="<?php echo htmlspecialchars($record['RR_CERTINFO']); ?>">
 			<!-- END TLSA RR -->		
