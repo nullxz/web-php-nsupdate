@@ -1,3 +1,8 @@
+<?php
+	header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+	header("Cache-Control: post-check=0, pre-check=0", false);
+	header("Pragma: no-cache");
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,6 +17,7 @@
 <?php include("CONFIG.php");?>
 <?php include("AXFR.php");?>
 		<div id="panel">
+		<button type="button" onclick="window.location.href = './';" style="float: right;">Reload RR</button>
 		<?php
 		echo "ZONE $ZONE <BR><BR>";
 		?>
@@ -25,13 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php include("GUI.php");?>
 
 
-
-		<BR><BR>
+		<p>DIG AXFR STATUS</p>
 		<textarea disabled rows="16" cols="128" id="command_output" placeholder="Command Output..."><?php print_r($dnsRecords); ?></textarea>
-		<BR><BR>
+		<BR>
 		<p>EXIT CODE IS <?php print_r($exitcode); ?></p>
 <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		echo "<BR><BR>";
+		echo "<p>NSUPDATE STATUS</p>";
 		echo "<textarea disabled rows=\"16\" cols=\"128\" id=\"command_output\" placeholder=\"Command Output...\">";
 		print_r($nsaddExecOutput);
 		echo "</textarea>";

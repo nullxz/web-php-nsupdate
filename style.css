@@ -66,16 +66,25 @@ input[type=submit] {
 table {
 	width: 100%;
 	table-layout: fixed;
+	border-collapse: collapse;
 }
 th {
 	text-align: left;
 	padding: 4px;
 	word-wrap: break-word;
+	border-bottom: 1px solid #ddd;
 }
-td {
+#td {
 	text-align: left;
 	padding: 4px;
 	word-wrap: break-word;
+	border-bottom: 1px solid #ddd;
+}
+#td-no-border {
+	text-align: left;
+	padding: 4px;
+	word-wrap: break-word;
+	border-bottom: none;
 }
 .edit_button {
   position: relative;
@@ -104,4 +113,15 @@ td {
 }
 .add_form {
 	display: none;
+}
+button {
+  position: relative;
+  background-color: #ffb300;
+  width: 10%;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  color: #212121;
+  padding: 8px;
+  text-align: center;
 }

@@ -8,14 +8,14 @@
 	</tr>
 	<?php foreach ($dnsRecords as $record): ?>
 	<tr>
-		<td><?php echo htmlspecialchars($record['RR_NAME']); ?></td>
-		<td><?php echo htmlspecialchars($record['RR_TYPE']); ?></td>
-		<td><?php echo htmlspecialchars($record['RR_TTL']); ?></td>
-		<td><?php echo htmlspecialchars($record['RR_CONTENT']); ?></td>
-		<td><button type="button" class="edit_button">Edit</button></td>
+		<td id="td"><?php echo htmlspecialchars($record['RR_NAME']); ?></td>
+		<td id="td"><?php echo htmlspecialchars($record['RR_TYPE']); ?></td>
+		<td id="td"><?php echo htmlspecialchars($record['RR_TTL']); ?></td>
+		<td id="td"><?php echo htmlspecialchars($record['RR_CONTENT']); ?></td>
+		<td id="td"><button type="button" class="edit_button">Edit</button></td>
 	</tr>
 	<tr class="form_row">
-		<td colspan="5">
+		<td id="td-no-border" colspan="5">
 		<form class="EDITGUI" method="POST" action="index.php">
 			<?php if ($record['RR_TYPE'] == 'TXT'): ?>
 			<!-- FOR TXT RR-->
