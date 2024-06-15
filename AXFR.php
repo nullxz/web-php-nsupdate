@@ -19,6 +19,7 @@ function parseDigOutput($output) {
 		$ttl = $matches[2];
 		$type = $matches[3];
 		$content = $matches[4];
+		$fullcontent = $line;
 
 		$record = [
 		'RR_NAME' => $name,
@@ -26,17 +27,18 @@ function parseDigOutput($output) {
 		'RR_TYPE' => $type,
 		'RR_A' => '',
 		'RR_AAAA' => '',
-		'RR_CONTENT' => $content, // Initialize RR_CONTENT
-		'RR_PRIORITY' => '', // Initialize RR_PRIORITY
-		'RR_WEIGHT' => '', // Initialize RR_WEIGHT
-		'RR_PORT' => '', // Initialize RR_PORT
-		'RR_TARGET' => '', // Initialize RR_TARGET
-		'RR_FLAGS' => '', // Initialize RR_FLAGS
-		'RR_TAG' => '', // Initialize RR_TAG
-		'RR_VALUE' => '', // Initialize RR_VALUE
-		'RR_ALGORITHM' => '', // Initialize RR_ALGORITHM
-		'RR_FINGERPRINT' => '', // Initialize RR_FINGERPRINT
-		'RR_NULL' => '', // Initialize RR_NULL
+		'RR_CONTENT' => $content,
+		'RR_FULLCONTENT' => $fullcontent,
+		'RR_PRIORITY' => '',
+		'RR_WEIGHT' => '',
+		'RR_PORT' => '',
+		'RR_TARGET' => '',
+		'RR_FLAGS' => '',
+		'RR_TAG' => '',
+		'RR_VALUE' => '',
+		'RR_ALGORITHM' => '',
+		'RR_FINGERPRINT' => '',
+		'RR_NULL' => '',
 		];
 
             // Only process specific record types

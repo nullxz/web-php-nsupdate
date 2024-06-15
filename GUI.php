@@ -11,7 +11,12 @@
 		<td id="td"><?php echo htmlspecialchars($record['RR_NAME']); ?></td>
 		<td id="td"><?php echo htmlspecialchars($record['RR_TYPE']); ?></td>
 		<td id="td"><?php echo htmlspecialchars($record['RR_TTL']); ?></td>
-		<td id="td"><?php echo htmlspecialchars($record['RR_CONTENT']); ?></td>
+		<td id="td"><?php
+		if ($record['RR_TYPE'] == "TLSA" or $record['RR_TYPE'] == "SRV") {
+			echo htmlspecialchars($record['RR_FULLCONTENT']);
+		} else {
+			echo htmlspecialchars($record['RR_CONTENT']);
+		}?></td>
 		<td id="td"><button type="button" class="edit_button">Edit</button></td>
 	</tr>
 	<tr class="form_row">
