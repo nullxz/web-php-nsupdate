@@ -1,9 +1,14 @@
 <?php
 // GET AXFR For GUI
-exec("/usr/bin/dig -k $TSIG_PATH AXFR $ZONE @$NS +noclass +nocomments +nocmd +nostats", $cmdout, $exitcode);
-
+if ($USEKEY == "1") {
+	exec("$DIG_PATH -k $TSIG_PATH AXFR $ZONE @$NS +noclass +nocomments +nocmd $DIGEXT", $cmdout, $exitcode);
+} elseif ($USEKEY == "0") {
+	exec("$DIG_PATH AXFR $ZONE @$NS +noclass +nocomments +nocmd +nostats $DIGEXT", $cmdout, $exitcode);
+} else {
+	die("CONFIG ERROR!");
+}
 if ($exitcode !== 0) {
-    die("AXFR query failed with exit code $exitcode Do you forget to edit the CONFIG.php?");
+	die("AXFR query failed with exit code $exitcode Do you forget to edit the CONFIG.php?");
 }
 
 

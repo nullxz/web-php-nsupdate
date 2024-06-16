@@ -34,6 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<p>DIG AXFR STATUS</p>
 		<textarea disabled rows="16" cols="128" id="command_output" placeholder="Command Output..."><?php print_r($dnsRecords); ?></textarea>
 		<BR>
+		<p>Command Output</p>
+		<textarea disabled rows="16" cols="128" id="command_output" placeholder="Command Output..."><?php print_r($cmdout); ?></textarea>
+		<BR>
 		<p>EXIT CODE IS <?php print_r($exitcode); ?></p>
 <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		echo "<p>NSUPDATE STATUS</p>";
