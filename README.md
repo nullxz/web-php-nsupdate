@@ -6,7 +6,17 @@
 
 ![ภาพหน้าจอตัวอย่าง](https://raw.githubusercontent.com/nullxz/NusaraDNS-ZONE/main/screenshot/example.png)
 # ความต้องการขั้นต่ำ
-คุณต้องมี Name server ที่รองรับ RFC 2136 ทำงานบน Port 53 หรือ 853 สำหรับ TLS
+ต้องมี
+- BIND9 พร้อม Port 53 DNS หรือ 853 DNS over TLS (DoT), 443 DNS over HTTPS(DoH)
+
+- DIG tool
+
+- nsupdate
+
+### หากต้องการเข้ารหัสลับ TLS/HTTPS
+DIG tool >=9.18.X ขึ้นไปสำหรับ TLS และ HTTPS หากเวอร์ชั่นต่ำกว่านี้ TLS หรือ HTTPS อาจใช้การไม่ได้
+
+nsupdate >=9.19.x ขึ้นไปสำหรับ TLS หากเวอร์ชั่นต่ำกว่านี้ TLS อาจใช้การไม่ได้
 
 และ HTTP Server พร้อม PHP-CGI
 
