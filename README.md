@@ -13,12 +13,14 @@
 
 - nsupdate
 
+- HTTP Server พร้อม PHP-CGI
+
 ### หากต้องการเข้ารหัสลับ TLS/HTTPS
 DIG tool >=9.18.X ขึ้นไปสำหรับ TLS และ HTTPS หากเวอร์ชั่นต่ำกว่านี้ TLS หรือ HTTPS อาจใช้การไม่ได้
 
 nsupdate >=9.19.x ขึ้นไปสำหรับ TLS หากเวอร์ชั่นต่ำกว่านี้ TLS อาจใช้การไม่ได้
 
-และ HTTP Server พร้อม PHP-CGI
+---
 
 ณ เครื่องที่เรียกใช้งาน PHP-CGI ต้องมีไบนารี nsupdate และ dig ที่เรียกใช้งานได้ พร้อม TSIG Key สำหรับ AXFR
 
