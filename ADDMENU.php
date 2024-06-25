@@ -23,7 +23,7 @@
 				<input type="hidden" name="RR_TYPE" value="A">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			<form method="POST" action="index.php" id="AAAA" class="add_form">
 				<label>NAME:</label>
@@ -35,7 +35,7 @@
 				<input type="hidden" name="RR_TYPE" value="AAAA">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			<form method="POST" action="index.php" id="CNAME" class="add_form">
 				<label>NAME:</label>
@@ -47,7 +47,7 @@
 				<input type="hidden" name="RR_TYPE" value="CNAME">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			<form method="POST" action="index.php" id="MX" class="add_form">
 				<label>NAME:</label>
@@ -60,7 +60,7 @@
 				<input type="hidden" name="RR_TYPE" value="MX">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			<form method="POST" action="index.php" id="TXT" class="add_form">
 				<label>NAME:</label>
@@ -72,7 +72,7 @@
 				<input type="hidden" name="RR_TYPE" value="TXT">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			<form method="POST" action="index.php" id="SRV" class="add_form">
 				<label>Service:</label>
@@ -95,7 +95,7 @@
 				<input type="hidden" name="RR_TYPE" value="SRV">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			<form method="POST" action="index.php" id="SSHFP" class="add_form">
 				<label>NAME:</label>
@@ -123,7 +123,7 @@
 				<input type="hidden" name="RR_TYPE" value="SSHFP">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			<form method="POST" action="index.php" id="CAA" class="add_form">
 				<label>NAME:</label>
@@ -141,7 +141,7 @@
 				<input type="hidden" name="RR_TYPE" value="CAA">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			<form method="POST" action="index.php" id="TLSA" class="add_form">
 				<label>Port:</label>
@@ -172,6 +172,6 @@
 				<input type="hidden" name="RR_TYPE" value="TLSA">
 				<BR><BR>
 				<input type="hidden" name="RR_MODE" value="ADD">
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" onclick="return askDNSAdd()">
 			</form>
 			</div>

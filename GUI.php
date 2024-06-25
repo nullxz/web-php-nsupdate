@@ -21,7 +21,7 @@
 	</tr>
 	<tr class="form_row">
 		<td id="td-no-border" colspan="5">
-		<form class="EDITGUI" method="POST" action="index.php">
+		<form class="EDITGUI" method="POST" action="index.php" onsubmit="return askDNSUpdate(this)">
 			<?php if ($record['RR_TYPE'] == 'TXT'): ?>
 			<!-- FOR TXT RR-->
 			<label for="RR_NAME">Name:</label>
