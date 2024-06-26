@@ -31,11 +31,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php include("GUI.php");?>
 
 
-		<p>DIG AXFR STATUS</p>
+		<p>STATUS RR</p>
 		<textarea disabled rows="16" cols="128" id="command_output" placeholder="Command Output..."><?php print_r($dnsRecords); ?></textarea>
 		<BR>
-		<p>Command Output</p>
-		<textarea disabled rows="16" cols="128" id="command_output" placeholder="Command Output..."><?php print_r($cmdout); ?></textarea>
+		<p>DIG AXFR STATUS</p>
+		<textarea disabled rows="16" cols="128" id="command_output" placeholder="Command Output..."><?php foreach($cmdout as $DIGRAWCMDOUT) { echo htmlspecialchars($DIGRAWCMDOUT); echo "\n";} ?></textarea>
 		<BR>
 		<p>EXIT CODE IS <?php print_r($exitcode); ?></p>
 <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
