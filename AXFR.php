@@ -129,4 +129,9 @@ function parseDigOutput($output) {
 }
 
 $dnsRecords = parseDigOutput($cmdout);
+
+usort($dnsRecords, function($a, $b) {
+    return strcmp($a['RR_TYPE'], $b['RR_TYPE']);
+});
+
 ?>

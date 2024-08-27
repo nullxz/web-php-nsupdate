@@ -15,6 +15,13 @@
 
 	<body>
 <?php include("CONFIG.php");?>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	include("NSUPDATE.php");
+	// sleep สักพักผู้ใช้จะได้ไม่ต้องรีโหลดเอง
+	sleep(1);
+}
+?>
 <?php include("AXFR.php");?>
 		<div id="panel">
 		<button type="button" onclick="window.location.href = './';" style="float: right;">Reload RR</button>
@@ -23,11 +30,6 @@
 		?>
 
 <?php include("ADDMENU.php");?><BR><BR>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	include("NSUPDATE.php");
-}
-?>
 <?php include("GUI.php");?>
 
 
